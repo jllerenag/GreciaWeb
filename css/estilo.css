@@ -1,0 +1,88 @@
+
+*{
+	font-family: 'Lobster Two', cursive;
+	font-weight: 100;
+	
+}
+
+.nav__responsive-ul{
+	display: none;
+}
+
+.nav{
+	background-color: #1A3982;
+}
+
+/*
+--------------------------------
+*/
+.nav__li{
+	display: inline-block;
+	padding: 9px;
+	color: #fff;
+}
+
+/*
+------------ Cuando se les pasa por encima a los nombres del menu cambia de color, el color del icono es el "li" solo --------------
+------------ si deseas que se cambie el color del texto del menu cambia el color del "a"                              --------------
+*/
+.nav__li:hover > a{
+color: #87C7D4;
+}
+
+.nav__li:hover {
+color: #87C7D4;
+}
+
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------
+-------------- Aqui se les da los colores iniciales tanto al icono como al texto del menu ------------------------------
+*/
+.nav__li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__li i{
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
+
+}
+
+.nav__responsive-button{
+	float: right;
+	font-size: 25px;
+	padding: 6px 20px;
+	color: #fff;
+}
+
+
+/*
+--------------Evento para desaparecer el menu creado y visualizar el menu responsive cuando la resolucion sea menor a 500 pixeles----
+-------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 500px){
+	.nav__ul{
+		display: none;
+	}
+
+	.nav__responsive-ul{
+		display: block;
+		position: absolute;
+		width: 100%;
+		background: #1A3982;
+	}
+
+	.nav {
+		height: 37px;
+		width: 100%;
+
+	}
+
+	
+}
+
+
